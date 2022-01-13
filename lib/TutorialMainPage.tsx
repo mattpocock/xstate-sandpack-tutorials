@@ -1,30 +1,26 @@
+import { ChevronDownIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
   ButtonGroup,
-  Flex,
   HStack,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
   Modal,
-  ModalBody,
   ModalCloseButton,
   ModalContent,
-  ModalFooter,
   ModalHeader,
   ModalOverlay,
   Text,
 } from "@chakra-ui/react";
 import { Sandpack } from "@codesandbox/sandpack-react";
 import { useMachine } from "@xstate/react";
-import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import { createMachine } from "xstate";
-import { Tutorial, tutorialDb } from "../lib/tutorialDb";
-import { ChevronDownIcon, StarIcon } from "@chakra-ui/icons";
 import Link from "next/link";
+import { createMachine } from "xstate";
+import { Tutorial } from "../lib/tutorialDb";
 
 const PACKAGE_JSON_CODE = JSON.stringify(
   {
@@ -33,6 +29,7 @@ const PACKAGE_JSON_CODE = JSON.stringify(
     description: "React and TypeScript example starter project",
     main: "src/index.tsx",
     dependencies: {
+      "@chakra-ui/icons": "^1.1.1",
       react: "17.0.2",
       "react-dom": "17.0.2",
       "react-scripts": "4.0.3",
@@ -154,7 +151,7 @@ export const TutorialMainPage = ({
               alignItems="center"
               justifyContent="center"
             >
-              #1
+              #{tutorial.number}
             </Text>
             <Text
               color="gray.800"

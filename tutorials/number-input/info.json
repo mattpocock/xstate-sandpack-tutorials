@@ -1,0 +1,10 @@
+{
+  "title": "Number Input",
+  "active": "machine.ts",
+  "hidden": ["App.tsx"],
+  "looms": {
+    "intro": "bae78191300044be8e71ccd6ac90ce0f",
+    "solution": "28e12b7499234e0aae8cc8d660437ecc"
+  },
+  "score": 75
+}

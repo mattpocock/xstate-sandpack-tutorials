@@ -18,6 +18,7 @@ export interface Tutorial {
     solution: string;
   };
   score: number;
+  number: number;
 }
 
 const infoSchema = z.object({
@@ -100,7 +101,11 @@ const getAllTutorials = (): Tutorial[] => {
 
       return { ...parseResult.data, files: filesContents, id: tutorialDir };
     })
-    .sort((a, b) => b.score - a.score);
+    .sort((a, b) => a.score - b.score)
+    .map((tutorial, index) => ({
+      ...tutorial,
+      number: index + 1,
+    }));
 };
 
 export const tutorialDb = {
