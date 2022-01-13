@@ -1,0 +1,10 @@
+{
+  "title": "Loading Indicator Animation",
+  "active": "machine.ts",
+  "hidden": ["App.tsx"],
+  "looms": {
+    "intro": "b4a2ed56f342472e8d044eb12f15d96d",
+    "solution": "b4a2ed56f342472e8d044eb12f15d96d"
+  },
+  "score": 50
+}
