@@ -133,7 +133,12 @@ export const TutorialMainPage = ({
         justifyContent="space-between"
       >
         <HStack flex="1" spacing="6">
-          <Text color="gray.600" fontSize="lg" fontWeight="bold">
+          <Text
+            color="gray.800"
+            fontSize="lg"
+            fontWeight="bold"
+            letterSpacing="tight"
+          >
             XState Tutorials
           </Text>
         </HStack>
@@ -225,6 +230,7 @@ export const TutorialMainPage = ({
               hidden: true,
             },
           }}
+          theme="github-light"
           options={{
             editorHeight: "calc(100vh - 4rem)",
           }}
