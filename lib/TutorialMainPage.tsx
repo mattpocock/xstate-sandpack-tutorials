@@ -121,6 +121,25 @@ export const TutorialMainPage = ({
           content={`An XState tutorial on how to build a ${tutorial.title}`}
         />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/viz/favicon@256.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/viz/favicon.png" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://stately.ai/viz`} />
+        <meta
+          property="og:title"
+          content={`XState Tutorial: Build a ${tutorial.title}`}
+        />
+        <meta
+          property="og:description"
+          content={`An XState tutorial on how to build a ${tutorial.title}, from XState core member Matt Pocock`}
+        />
+        {/* {props.ogImageUrl && featureFlags["Show OG Images"] && (
+          <meta property="og:image" content={props.ogImageUrl} />
+        )}
+
+        <meta property="twitter:card" content="summary_large_image" /> */}
       </Head>
       <Box
         h="4rem"
