@@ -13,10 +13,6 @@ import { createMachine } from "xstate";
  * xlarge
  *
  * The loading indicator should get bigger every 2 seconds!
- *
- * Use the 'Intro' button above to see a video explaining
- * the problem, and the 'Solution' button for a video
- * with a solution.
  */
 export const machine = createMachine({
   initial: "xsmall",

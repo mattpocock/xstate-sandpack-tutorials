@@ -9,6 +9,10 @@ import { createMachine } from "xstate";
  *
  * Clicking on the - button will fire the DECREMENT
  * event.
+ *
+ * Use the 'Intro' button above to see a video explaining
+ * the problem, and the 'Solution' button for a video
+ * with a solution.
  */
 export const machine = createMachine({
   context: {
