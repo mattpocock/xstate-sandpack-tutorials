@@ -1,0 +1,10 @@
+{
+  "title": "Email Input",
+  "active": "machine.ts",
+  "hidden": ["App.tsx"],
+  "looms": {
+    "intro": "afea2748b22c499e8f52eaaa667ce658",
+    "solution": "d4186c16644f4ecd93304cebb7bbc0e1"
+  },
+  "score": 75
+}
